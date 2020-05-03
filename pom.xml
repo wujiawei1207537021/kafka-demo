@@ -74,12 +74,7 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox-swagger2.version}</version>
         </dependency>
-        <!--     lobok   -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-        </dependency>
+
     </dependencies>
 
     <build>

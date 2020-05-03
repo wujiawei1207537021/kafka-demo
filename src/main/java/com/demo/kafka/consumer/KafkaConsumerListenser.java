@@ -1,6 +1,5 @@
 package com.demo.kafka.consumer;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
@@ -13,7 +12,6 @@ import java.util.Map;
 /**
  * 监听kafka 消息队列
  */
-@Slf4j
 @Component
 @EnableKafka
 public class KafkaConsumerListenser {
