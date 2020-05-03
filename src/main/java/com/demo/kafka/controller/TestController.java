@@ -15,7 +15,7 @@ public class TestController {
     private KafkaTemplate kafkaTemplate;
 
     @ApiOperation("数据接入kafka topic")
-    @PostMapping("/data-access/topic/{topicName}")
+    @PostMapping("/topic/{topicName}")
     public void dataAccessTopic(@PathVariable @ApiParam(value = "kafka topic名称,必须已注册", required = true) String topicName,
                                                @RequestBody String payload) {
             kafkaTemplate.send(topicName, payload);
