@@ -25,7 +25,7 @@ public class KafkaConsumerListenser {
     void listener(String records) {
         List<Map<String, String>> dataList = new ArrayList<Map<String, String>>();
         String tabliName = null;
-        log.info(records);
+        System.out.println(records);
     }
 }
 
