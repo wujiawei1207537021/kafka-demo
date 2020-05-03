@@ -11,9 +11,7 @@ import java.util.Map;
 
 
 /**
- * @Description： kafka监听类
- * @Author：panboyang
- * @date:2019/11/8 17:23
+ * 监听kafka 消息队列
  */
 @Slf4j
 @Component
@@ -22,11 +20,9 @@ public class KafkaConsumerListenser {
 
 
     /**
-     * @Description： kafka监听类 ,containerFactory设置为批量接收参数 ,Acknowledgment为偏移量
-     * @Author：panboyang
-     * @date:2019/11/11 17:23
+     *
+     * @param records
      */
-    @SuppressWarnings("unchecked")
     @KafkaListener(groupId = "groupA", topics = "topicA")
     void listener(String records) {
         List<Map<String, String>> dataList = new ArrayList<Map<String, String>>();
