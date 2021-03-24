@@ -7,6 +7,7 @@ spring:
     listener:
       missing-topics-fatal: false
     bootstrap-servers:
-      - 192.168.8.108:9082  #本地kafka 服务
+#      - 192.168.8.108:9082  #本地kafka 服务
+      - hadoop002:9092
 server:
   port: 7800
